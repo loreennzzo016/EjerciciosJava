@@ -9,14 +9,6 @@ public class CuentaBancaria {
         this.saldo = saldoInicial;
     }
 
-    public String getNumeroCuenta() {
-        return numeroCuenta;
-    }
-
-    public double getSaldo() {
-        return saldo;
-    }
-
     public void depositar(double monto) {
         if (monto > 0) {
             saldo += monto;
@@ -38,6 +30,7 @@ public class CuentaBancaria {
     }
 
     public void mostrarInformacion() {
-        System.out.println("Cuenta: " + numeroCuenta + " | Saldo: " + saldo);
+        System.out.println("Número de cuenta: " + numeroCuenta);
+        System.out.println("Saldo actual: " + saldo);
     }
 }
